@@ -1,0 +1,77 @@
+---
+title             : "If psychological theory did not exist we would have to invent it"
+shorttitle        : "Psychological theory"
+
+author: 
+  - name          : "Danielle J. Navarro"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "School of Psychology, University of New South Wales, Kensington 2052, Sydney, Australia"
+    email         : "d.navarro@unsw.edu.au"
+
+affiliation:
+  - id            : "1"
+    institution   : "School of Psychology, University of New South Wales"
+
+authornote: |
+  This manuscript is based on conversations with Berna Dezever and many others. I want to specifically note Berna's contribution in this initial submission as she will likely be a coauthor on any published version. At the current point in development she has not had the opportunity to provide input and (as a way of assuming sole responsibilities for any errors in the current version) I have not listed her as a coauthor at this stage.
+  
+abstract: |
+  Abstract is coming
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "X"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+ootnotelist      : no
+linenumbers       : no
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "jnl"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+
+In 1987 Roger Shepard published a short paper in *Science* with the ambitious title "Toward a Universal Law of Generalization for Psychological Science" [@shepard1987toward]. Drawing on extensive work in the empirical literature on stimulus generalization across many species to which he had been a contributor (e.g., Shepard 1951) -- and on the statistical literature on multidimensional scaling, to which he was also a major contributor (e.g., Shepard 1974), he asserted the claim that the form of any stimulus generalization function shouold be approximately exponential in form, when measured with respect to an appropriately formulated stimulus representation. His paper begins with the following remark:
+
+> The tercentenary of the publication, in 1687, of Newton's *Principia* prompts the question of whether psychological science has any hope of achieving a law that is comparable in generality (if not in predictive accuracy) to Newton's universal law of gravitation. Exploring the direction that currently seems most favorable for an affirmative answer, I outline empirical evidence an a theoretical rationale in support of a tentative candidate for a universal law of generalization
+
+Shepard's claim in the original paper was remarkable in scope. He drew on data from several terrestrial species (e.g., humans, pigeons, rats) and across many stimulus domains (e.g., visual, auditory), data that had hitherto been considered unrelated. To spot the connection between these data, Shepard used statistical insights from the similarity modelling literature. He noted that the apparent noninvariance of observed stimulus generalisation functions stemmed largely from the fact that response data were previously analysed with respect to the physical dissimilarities of the stimulus. When the same responses were replotted as a function of distance in a psychological space contructed by multidimensional scaling, he found that the form of the stimulus generalisation was remarkably regular in shape
+
+
+
+## Conclusion
+
+To return to Shepard's original paper
+
+> Undoubtably, psychological science had lagged by behind physical science by at least 300 years. Undoubtedly, too, prediction of behavior can never attain the precision for animate that it has for celestial bodies. Yet, psychology may not be inherently limited merely to the descriptive characterization of the behaviors of particular terrestrial species. Possibly, behind the diverse behaviors of humans and animals, as behind the various motions of planets and stars, we may discern the operation of universal laws
+
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
