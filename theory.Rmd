@@ -62,17 +62,19 @@ Shepard's claim in the original paper was remarkable in scope. He drew on data f
 Taken by itself Shepard's empirical discovery would have been impressive. However, not content merely to discover the underlying invariance and thereby unify several distinct strands of research, Shepard went on to provide a theoretical explanation for *why* we should expect to find this invariance. The theory was surprisingly simple: the learner presumes there exists some unknown *consequential* region of the stimulus space across which roughly the same properties hold (e.g., things that look like apples will probably taste the same as one another). Encountering a single stimulus that entails a particular consequence, the learner's task is to infer the location, shape and size of the consequential region itself. Naturally this is an underconstrained problem, as there are an infinite number of possible regions that might correspond to the true consequential region. Nevertheless, Shepard showed that under a quite range of prior assumptions that the learner makes about the nature of consequential regions, the shape of the *generalization* function across the stimulus space ends up approximately exponential, shown on the right side of Figure 1.
 
 (ref:shepard-caption) Two of the figures from Shepard's (1987) paper on stimulus generalisation. On the left, his Fig 1 shows the empirical evidence for an exponential law and on the right his Fig 3 outlines his theoretical claim. [Note: higher resolution versions will be provided in the final version and permission will be obtained to reproduce the originals]
-```{r, echo=FALSE, fig.cap = "(ref:shepard-caption)"}
+```{r, echo=FALSE, fig.cap = "(ref:shepard-caption)", fig.pos = "t"}
 knitr::include_graphics("shepard.jpg",dpi = 150)
 ```
 
+Since its publication in 1987, Shepard's paper has been cited approximately 2500 times according to Google Scholar, no small feat for a theoretical paper that presented no new empirical data and whose content is almost entirely devoted to the derivation of a formal relation between one unobservable quantity (distance between two items psychological space) and another (the probability two items fall in the same region). 
 
-## Conclusion
 
-To return to Shepard's original paper
 
-> Undoubtably, psychological science had lagged by behind physical science by at least 300 years. Undoubtedly, too, prediction of behavior can never attain the precision for animate that it has for celestial bodies. Yet, psychology may not be inherently limited merely to the descriptive characterization of the behaviors of particular terrestrial species. Possibly, behind the diverse behaviors of humans and animals, as behind the various motions of planets and stars, we may discern the operation of universal laws
 
+
+
+
+<!-- > Undoubtably, psychological science had lagged by behind physical science by at least 300 years. Undoubtedly, too, prediction of behavior can never attain the precision for animate that it has for celestial bodies. Yet, psychology may not be inherently limited merely to the descriptive characterization of the behaviors of particular terrestrial species. Possibly, behind the diverse behaviors of humans and animals, as behind the various motions of planets and stars, we may discern the operation of universal laws -->
 
 # References
 ```{r create_r-references}
