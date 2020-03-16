@@ -162,13 +162,10 @@ Indeed, one might argue that the success of Shepard's law tells us a great deal 
 
 Empirical data, statistical inference and novel predictions are all vital to the scientific process -- of that there is little doubt -- but none of them are substitutes for or synonymous with theoretical development. If so, what might a theory be?
 
-\hypertarget{how-to-make-a-psychological-theory}{%
-\section{How to make a psychological theory}\label{how-to-make-a-psychological-theory}}
+\hypertarget{distinguishing-theories-from-measurement-tools}{%
+\section{Distinguishing theories from measurement tools}\label{distinguishing-theories-from-measurement-tools}}
 
 It is not difficult to list some of the desiderata for a scientific theory. A scientific theory should be \emph{independent of its creator}, for instance. It is difficult to make much use of a theory otherwise. In practice this typically means a theory is mathematical or computational in nature. Similarly, psychological theories should of course make some connection with empirical data, giving some account of the \emph{generative mechanism} that gave rise to those data. Theories should be usable, in the sense of providing other scientists \emph{guidance for future research}. Other criteria could also be named, including falsifiability, simplicity, compatibility with existing literature, generalizability, predictive ability and so on. However, while it is easy to list desiderata and even easier to argue over which elements to such lists are the most important, such ``discussions in the abstract'' rarely provide much guidance to the would-be theoretician. From the perspective of the working scientist, it is perhaps more useful to give concrete examples, and to that end I return to an examination of Shepard's (1987) paper.
-
-\hypertarget{a-theory-can-have-scope-outside-the-measurement-instrument}{%
-\subsection{A theory can have scope outside the measurement instrument}\label{a-theory-can-have-scope-outside-the-measurement-instrument}}
 
 One of the key insights in Shepard (1987) is the recognition that stimulus generalization functions that appear extremely irregular at first glance are in fact highly regular when stimuli are represented in an appropriate fashion, as depicted in Figure 2. Generalization to tones is irregular when tones are described in terms of their ordering around the chroma circle, but very smooth when described around the circle of fifths. Similarly, stimulus generalization to colours is irregular with respect the physical wavelenghts of light but is smooth with respect to perceptual colours space (e.g., Ekman 1954). In retrospect this seems an obvious point to cognitive scientists who have built from Shepard's work, and moreover in keeping with philosophical work on the representation of similarity (Goodman 1972). However, at the time Shepard developed the theory, he was faced with a substantive problem of how to extract the \emph{appropriate} stimulus representation to apply a theory to. Nonmetric multidimensional scaling (CITE) as a measurement instrument tool served this purpose for Shepard in 1987, and the smooth empirical curves on the left of Figure 1 all use MDS-estimated psychological spaces to supply the relevant measure of distance on the x-axis.
 
@@ -186,8 +183,8 @@ Clearly, without MDS as a measurement tool, Shepard would have found it almost i
 \includegraphics[width=6.07in]{tenenbaum_figure5} \caption{Figure 5 from Tenenbaum and Griffiths' (2001) paper \emph{Generalization, similarity, and Bayesian inference}. {[}Note: a higher resolution version will be provided in the final version and permission will be obtained to reproduce the originals{]}}\label{fig:unnamed-chunk-3}
 \end{figure}
 
-\hypertarget{a-theory-should-be-extensible-by-others}{%
-\subsection{A theory should be extensible by others}\label{a-theory-should-be-extensible-by-others}}
+\hypertarget{extensibility-of-a-good-theory}{%
+\section{Extensibility of a good theory}\label{extensibility-of-a-good-theory}}
 
 The original theory of generalization presented by Shepard (1987) was not explicitly framed as Bayesian model of cognition. In his original notation (Equation 2 from the paper) Shepard proposed that the generalization strength for a stimulus located at coordinate \(\mathbf{x} = (x_1, \ldots, x_K)\) in a \(K\)-dimensional space,\footnote{The space is usually endowed with one of the Minkowski distance metrics, most typically the Euclidean distance measure or the city block distance. One of the major contributions Shepard made was to provide a theoretical explanation for why the distance metric varies across stimulus domains, but is a little beyond the scope of the current paper.} when the learner has previously encountered a consequential stimulus located at the origin be expressed as follows:
 
@@ -223,10 +220,66 @@ p(x|h) = 1/|h|
 \end{equation}
 if \(x\) is an element of the consequential set, and 0 otherwise.
 
+\hypertarget{the-blessing-of-abstraction}{%
+\section{The blessing of abstraction}\label{the-blessing-of-abstraction}}
+
+In retrospect, one of the most important contributions made by the general Bayesian formulation adopted by Tenenbaum and Griffiths (2001) is that it allowed the underlying theory to be applied in a much broader range of scenarios. Shepard's (1987) original construction, though purportedly to be a very general law itself, was formulated with respect to a narrow class of psychological problems: inductive generalization from a single observation. Moreover, because the origins of his work lay in the study of human perception and the animal learning literature, it was not immediately clear (at least not to me) how the theory should be extended to higher order cognition. By framing the problem in a more general way, Tenenbaum and Griffiths' construction enabled a large proportion of my later research. Examples of research questions that I would have been unable to properly formulate without this theory:
+
+\begin{itemize}
+\tightlist
+\item
+  What kind of individual differences exist in the sampling assumptions people adopt in simple generalization problems? (Navarro, Dry, \& Lee, 2012)
+\item
+  Do categorization problems and inductive generalization problems lead people to adopt different sampling assumptions? (Hendrickson, Perfors, Navarro, \& Ransom, 2019)
+\item
+  Do people's beliefs about the origins of data and shape how we interpret the evidentiary value of the quantity (Ransom, Perfors, \& Navarro, 2016) and diversity of evidence (Hayes et al., 2019b)?
+\item
+  Can we use the Bayesian theory to unify and extend previously puzzling results (Lawson \& Kalish, 2009) on how sampling affects reasoning? (Hayes et al., 2019a)
+\item
+  Can we build a Bayesian model of how people ``take a hint'' from ostensibly uninformative data? (Voorspoels, Navarro, Perfors, Ransom, \& Storms, 2015)
+\item
+  Completing a ``virtuous cycle'' of sorts, recent work has taken our results from the reasoning context (Voorspoels et al., 2015) and applied it to make novel predictions in the associative learning (Lee, Lovibond, Hayes, \& Navarro, 2019)
+\end{itemize}
+
+This is of course a highly selected portion of the relevant literature, focusing as it does on work in which I was personally involved. The purpose of choosing these examples is that -- as the person developing the theoretical extensions in each case -- I am in a position to comment on exactly \emph{how} the theoretical formalism from Tenenbaum and Griffiths (2001) paper enabled this research when the original formalism from Shepard (1987) would have made it difficult. Because Shepard's formalism adhered closely to the specific problem he sought to explain (generalization from a single observed stimulus represented in a metric space) it was not clear to me prior to 2001 that the learner is necessarily reliant on an \emph{assumption} (explicit or implicit) about how the stimulus was called to the learner's attention. Under the Bayesian reformulation of the theory, this assumption was rendered visible via the likelihood \(P(x|h)\). When written in this form, it was painfully clear to me that the inductive inferences any learner makes about a novel item \(y\) is necessarily dependent on more than the observed data \(x\) -- it also depends on the assumptions embodied in the likelihood \(P(\cdot|h)\) as to how those data were collected. This link, present but obscured in Shepard's (1987) paper, was the central motivation behind this entire body of work and would not have been possible without the more abstract formalism introduced by Tenenbaum and Griffiths (2001).
+
+\hypertarget{distinguishing-theoretical-and-empirical-strength}{%
+\section{Distinguishing theoretical and empirical strength}\label{distinguishing-theoretical-and-empirical-strength}}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+From there wrap up. Link to more general uses of theory (e.g.~the Kalman filter example). Conclusion is that in some domains psychology has made theoretical progress. This progress hasn't been built on top of better statistical methodology, it certainly has nothing to do with preregistration, it's been from careful incremental formal development. End with the Shepard quote:
+
+\begin{quote}
+Undoubtably, psychological science had lagged by behind physical science by at least 300 years. Undoubtedly, too, prediction of behavior can never attain the precision for animate that it has for celestial bodies. Yet, psychology may not be inherently limited merely to the descriptive characterization of the behaviors of particular terrestrial species. Possibly, behind the diverse behaviors of humans and animals, as behind the various motions of planets and stars, we may discern the operation of universal laws
+\end{quote}
+
 \hypertarget{references}{%
 \section{References}\label{references}}
 
 \hypertarget{refs}{}
+\leavevmode\hypertarget{ref-hayes2019selective}{}%
+Hayes, B. K., Banner, S., Forrester, S., \& Navarro, D. J. (2019a). Selective sampling and inductive inference: Drawing inferences based on observed and missing evidence. \emph{Cognitive Psychology}, \emph{113}, 101221.
+
+\leavevmode\hypertarget{ref-hayes2019diversity}{}%
+Hayes, B. K., Navarro, D. J., Stephens, R. G., Ransom, K., \& Dilevski, N. (2019b). The diversity effect in inductive reasoning depends on sampling assumptions. \emph{Psychonomic Bulletin \& Review}, \emph{26}(3), 1043--1050.
+
+\leavevmode\hypertarget{ref-hendrickson2019sample}{}%
+Hendrickson, A. T., Perfors, A., Navarro, D. J., \& Ransom, K. (2019). Sample size, number of categories and sampling assumptions: Exploring some differences between categorization and generalization. \emph{Cognitive Psychology}, \emph{111}, 80--102.
+
+\leavevmode\hypertarget{ref-lawson2009sample}{}%
+Lawson, C. A., \& Kalish, C. W. (2009). Sample selection and inductive generalization. \emph{Memory \& Cognition}, \emph{37}(5), 596--607.
+
+\leavevmode\hypertarget{ref-lee2019negative}{}%
+Lee, J. C., Lovibond, P. F., Hayes, B. K., \& Navarro, D. J. (2019). Negative evidence and inductive reasoning in generalization of associative learning. \emph{Journal of Experimental Psychology: General}, \emph{148}(2), 289.
+
+\leavevmode\hypertarget{ref-navarro2012sampling}{}%
+Navarro, D. J., Dry, M. J., \& Lee, M. D. (2012). Sampling assumptions in inductive generalization. \emph{Cognitive Science}, \emph{36}(2), 187--223.
+
+\leavevmode\hypertarget{ref-ransom2016leaping}{}%
+Ransom, K. J., Perfors, A., \& Navarro, D. J. (2016). Leaping to conclusions: Why premise relevance affects argument strength. \emph{Cognitive Science}, \emph{40}(7), 1775--1796.
+
 \leavevmode\hypertarget{ref-russell1988analogy}{}%
 Russell, S. (1988). Analogy by similarity. In \emph{Analogical reasoning} (pp. 251--269). Springer.
 
@@ -238,5 +291,8 @@ Shepard, R. N. (2004). How a cognitive psychologist came to seek universal laws.
 
 \leavevmode\hypertarget{ref-tenenbaum2001generalization}{}%
 Tenenbaum, J. B., \& Griffiths, T. L. (2001). Generalization, similarity, and bayesian inference. \emph{Behavioral and Brain Sciences}, \emph{24}(4), 629--640.
+
+\leavevmode\hypertarget{ref-voorspoels2015people}{}%
+Voorspoels, W., Navarro, D. J., Perfors, A., Ransom, K., \& Storms, G. (2015). How do people learn from negative evidence? Non-monotonic generalizations and sampling assumptions in inductive reasoning. \emph{Cognitive Psychology}, \emph{81}, 1--25.
 
 \end{document}
