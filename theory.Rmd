@@ -19,7 +19,7 @@ abstract: |
   It is commonplace, when discussing the subject of psychological theory, to write articles from the assumption that psychology differs from physical sciences in that we have no theories that would support cumulative, incremental science. In this brief paper I discuss one counterexample, namely Shepard's (1987) law of generalization and the various Bayesian extensions that it inspired over the last three decades. Using Shepard's law as a running example I argue that psychological theory building is not a statistical problem; mathematical formalism is theoretically beneficial; measurement and theory have a complex relationship; rewriting old theory can yield new insights; and finally, that theoretical growth can drive empirical work. Though generally suggesting that the tools of mathematical psychology are valuable to the psychological theorist, the paper also comments on some limitations to this approach.
 
 keywords          : "psychological theory, inductive generalization, mathematical psychology, cognitive modelling \\vspace{12pt}"
-wordcount         : "6038 in main text, 636 in references"
+wordcount         : "6077 in main text, 636 in references"
 
 bibliography      : ["myrefs.bib"]
 
