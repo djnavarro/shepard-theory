@@ -8,8 +8,8 @@ library(patchwork)
 library(ggforce)
 set.seed(1)
 
-n <- 500 # number of consequential regions to sample
-r <- 7   # range parameter for the plots
+n <- 50000 # number of consequential regions to sample
+r <- 7.5   # range parameter for the plots
 
 
 # shepard model -----------------------------------------------------------
@@ -17,8 +17,8 @@ r <- 7   # range parameter for the plots
 
 # construct posterior hypothesis space
 hypotheses <- tibble(
-  mid_x = rnorm(n), # prior location parameters are treated as arbitrary
-  mid_y = rnorm(n),
+  mid_x = runif(n, min = -r, max = r), # prior location parameters are treated as arbitrary
+  mid_y = runif(n, min = -r, max = r),
   len_x = rgamma(n, rate = 1.2, shape = 1), # prior size is gamma/erlang per Shepard
   len_y = rgamma(n, rate = 0.5, shape = 1)
 ) %>%
@@ -31,6 +31,10 @@ hypotheses <- tibble(
   filter( # under weak sampling, Bayesian updating is simply falsification/filtering
     x_min < 0, x_max > 0, 
     y_min < 0, y_max > 0
+  ) %>%
+  filter( # for visual nicety, use the Navarro et al 2012 "bounded" model
+    x_min > -r, x_max < r,
+    y_min > -r, y_max < r
   )
 
 
@@ -61,21 +65,21 @@ pic <- ggplot(
   mapping = aes(xmin = x_min, ymin = y_min, 
                 xmax = x_max, ymax = y_max)
 ) + 
-  geom_rect(alpha = .2, color = "white", size = .1) + 
+  geom_rect(alpha = .15, color = "white", size = .1) + 
   
   # arrows and text
   annotate("point", x = 0, y = 0, shape = 19, size = 2) + 
   annotate(
-    geom = "curve", x = 2, y = 5, xend = 0, yend = .6, 
-    curvature = .3, arrow = arrow(length = unit(2, "mm"))
+    geom = "curve", x = 2.2, y = 6, xend = 0, yend = .6, 
+    curvature = .2, arrow = arrow(length = unit(2, "mm"))
   ) +
-  annotate(geom = "text", x = 2.3, y = 5, 
-           label = "Consequential\nStimulus", hjust = "left")  +
+  annotate(geom = "text", x = 2.7, y = 6, 
+           label = "Known\nConsequential\nStimulus", hjust = "left")  +
   annotate(
-    geom = "curve", x = -5, y = -5.5, xend = -3.2, yend = 0, 
+    geom = "curve", x = -5.8, y = -6.5, xend = -4.2, yend = 0, 
     curvature = -.2, arrow = arrow(length = unit(2, "mm"))
   ) +
-  annotate(geom = "text", x = -6.5, y = -6.5, 
+  annotate(geom = "text", x = -7, y = -7.2, 
            label = "Possible Consequential Region", hjust = "left")  +
   
   # stylistic
