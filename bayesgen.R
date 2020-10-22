@@ -1,5 +1,6 @@
 # author: Danielle Navarro
 # date: 2020-06-23
+# last edit: 2020-10-22
 
 # packages
 library(ggplot2)
@@ -121,7 +122,7 @@ figure <- above + blank + pic + right +
 
 # save to file
 ggsave(
-  filename = here::here("shepardsim.png"), 
+  filename = here::here("shepardsim.pdf"), # originally: "shepardsim.png" 
   plot = figure, 
   height = 6,
   width = 6
